@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="Snake.css" media="all" rel="stylesheet" type="text/css"/>
+	<meta charset = "UTF-8"/>
+	<title>Snake</title>
+</head>
+<body>
+<table>
+	<thead>
+			<tr>
+			<th colspan="17">0 pommes </th>
+			</tr>
+		</thead>
+		<tr>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+		</tr>
+		<tr>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+		</tr>
+		<tr>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+		</tr>
+		<tr>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+		</tr>
+		<tr>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+		</tr>
+		<tr>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+		</tr>
+		<tr>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+		</tr>
+		<tr>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"><img class="bleu" src="https://pngimage.net/wp-content/uploads/2018/06/rond-bleu-png-5.png"></td>
+			<td class="case1"><img class="bleu" src="https://pngimage.net/wp-content/uploads/2018/06/rond-bleu-png-5.png"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"><img id="rouge" src="https://pngimage.net/wp-content/uploads/2018/06/pastille-rouge-png.png"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+		</tr>
+		<tr>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+		</tr>
+		<tr>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+		</tr>
+		<tr>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+		</tr>
+		<tr>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+		</tr>
+		<tr>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+		</tr>
+		<tr>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+		</tr>
+		<tr>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+		</tr>
+		<tr>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+		</tr>
+		<tr>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+			<td class="case2"></td>
+			<td class="case1"></td>
+		</tr>
+	</table>
+
+
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="Snake.js"></script>
+</body>
+</html>
